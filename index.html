@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Habit Tracker</h1>
+    <div id="summary"></div>
+  </header>
+
+  <section>
+    <form id="habitForm">
+      <input id="name" type="text" placeholder="Habit name">
+      
+      <input id="target" type="number" min="1" max="7">
+      <select id="category">
+        <option value="">Select category</option>
+        <option value="health">Health</option>
+        <option value="study">Study</option>
+        <option value="fitness">Fitness</option>
+        <option value="mindset">Mindset</option>
+      </select>
+
+      <button type="submit">Add</button>
+    </form>
+
+    <p id="error"></p>
+  </section>
+
+  <main id="habitList"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
